@@ -1,7 +1,12 @@
 # bash-cpde-project9-Weather_Fetcher
-Made a simple weather fetcher app in Bash 
+-----------------------------------------
+Made a simple weather fetcher app in Bash
+-----------------------------------------
 
-weather app uses curl to fetch weather data from the OpenWeatherMap API and jq to parse the JSON response. Here's a breakdown of the code and potential fixes:
+
+- Weather app uses curl to fetch weather data from the OpenWeatherMap API and jq to parse the JSON response.   
+
+- Here's a breakdown of the code
 
 Code Breakdown:
 
@@ -17,3 +22,8 @@ http://api.openweathermap.org/data/2.5/weather: This is the base URL for the Ope
 &units=metric: This parameter requests the temperature in Celsius.
 
 | jq '.': This pipes the output of curl (the JSON response) to the jq command, which is used to parse the JSON data. The . dot operator in jq simply prints the entire JSON object.
+
+- Installation: 
+1. Download the code using git clone https://github.com/CheezPascal/bash-cpde-project9-Weather_Fetcher.git 
+2. Then change the permissions with chmod +x weatherFetcher.sh
+3. Launch the app with ./weatherFetcher.sh
